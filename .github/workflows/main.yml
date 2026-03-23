@@ -1,1 +1,19 @@
 
+name: Verify Human Identity
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Run verification
+        run: echo "Verification Started"
+
+      - name: Complete
+        run: echo "Verification Done"
